@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Fresh Mart | Point of Sale</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Fresh Mart POS</h1>
+        </header>
+        
+        <main class="pos-layout">
+            <section class="products">
+                <div class="section-heading">
+                    <div>
+                        <h2 id="products-title">Products</h2>
+                    </div>
+                </div>
+
+                <div class="product-list" id="product-list"></div>
+            </section>
+
+            <aside class="order">
+                <div class="order-heading">
+                    <div>
+                        <h2 id="order-title">Current order</h2>
+                    </div>
+                    <span class="count">#001</span>
+                </div>
+                <div class="order-items"></div>
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Total items</span>
+                        <span id="item-count">0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Total</span>
+                        <strong id="total">$0.00</strong>
+                    </div>
+                    <button class="pay-button">
+                        Complete Sale <span>→</span></button
+                    ><button class="clear-button">Clear Order</button>
+                </div>
+            </aside>
+        </main>
+
+        <dialog id="receipt-dialog">
+            <h2 id="receipt-title">Sale completed</h2>
+            <div id="receipt-details"></div>
+            <form method="dialog">
+                <button class="pay-button">Start New Order</button>
+            </form>
+        </dialog>
+
+        <script src="script.js"></script>
+    </body>
 </html>
