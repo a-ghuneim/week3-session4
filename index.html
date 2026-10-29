@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Fresh Mart | Point of Sale</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="brand"><span class="logo">F</span><div><h1>Fresh Mart</h1><p>Point of Sale</p></div></div>
+        <span class="register">Register 01 <span class="status">Open</span></span>
+    </header>
+
+    <main class="pos-layout">
+        <section class="products" aria-labelledby="products-title">
+            <div class="section-heading"><div><p class="eyebrow">THE DAILY ESSENTIALS</p><h2 id="products-title">Available products</h2></div><span class="count">6 products</span></div>
+            <p class="section-description">Everything you need for your everyday shop.</p>
+            <div class="product-list">
+                <article class="product-card"><div class="product-image">🍎</div><p class="category">FRUIT</p><h3>Red Apples</h3><p class="unit">1 kg bag</p><div class="product-bottom"><strong>$3.50</strong><button type="button" class="add-button" aria-label="Add Red Apples">+ Add</button></div></article>
+                <article class="product-card"><div class="product-image cream">🍞</div><p class="category">BAKERY</p><h3>Fresh Bread</h3><p class="unit">1 loaf</p><div class="product-bottom"><strong>$2.00</strong><button type="button" class="add-button" aria-label="Add Fresh Bread">+ Add</button></div></article>
+                <article class="product-card"><div class="product-image blue">🥛</div><p class="category">DAIRY</p><h3>Whole Milk</h3><p class="unit">1 liter</p><div class="product-bottom"><strong>$2.50</strong><button type="button" class="add-button" aria-label="Add Whole Milk">+ Add</button></div></article>
+                <article class="product-card"><div class="product-image cream">🥚</div><p class="category">DAIRY</p><h3>Farm Eggs</h3><p class="unit">6 pieces</p><div class="product-bottom"><strong>$3.00</strong><button type="button" class="add-button" aria-label="Add Farm Eggs">+ Add</button></div></article>
+                <article class="product-card"><div class="product-image yellow">🍌</div><p class="category">FRUIT</p><h3>Bananas</h3><p class="unit">1 kg</p><div class="product-bottom"><strong>$1.50</strong><button type="button" class="add-button" aria-label="Add Bananas">+ Add</button></div></article>
+                <article class="product-card"><div class="product-image blue">💧</div><p class="category">DRINKS</p><h3>Mineral Water</h3><p class="unit">1.5 liters</p><div class="product-bottom"><strong>$1.00</strong><button type="button" class="add-button" aria-label="Add Mineral Water">+ Add</button></div></article>
+            </div>
+        </section>
+
+        <aside class="order" aria-labelledby="order-title">
+            <div class="order-heading"><div><p class="eyebrow">CHECKOUT</p><h2 id="order-title">Current order</h2></div><span class="count">#001</span></div>
+            <p class="order-caption">Sample order · 3 items</p>
+            <div class="order-items">
+                <article class="order-item"><div class="item-heading"><div><h3>Red Apples</h3><p>$3.50 / bag</p></div><button type="button" class="remove-button" aria-label="Remove Red Apples">Remove</button></div><div class="item-bottom"><div class="quantity"><button type="button" aria-label="Decrease Red Apples quantity">−</button><span>2</span><button type="button" aria-label="Increase Red Apples quantity">+</button></div><strong>$7.00</strong></div></article>
+                <article class="order-item"><div class="item-heading"><div><h3>Fresh Bread</h3><p>$2.00 / loaf</p></div><button type="button" class="remove-button" aria-label="Remove Fresh Bread">Remove</button></div><div class="item-bottom"><div class="quantity"><button type="button" aria-label="Decrease Fresh Bread quantity">−</button><span>1</span><button type="button" aria-label="Increase Fresh Bread quantity">+</button></div><strong>$2.00</strong></div></article>
+            </div>
+            <div class="order-summary"><div class="summary-row"><span>Total items</span><span>3</span></div><div class="summary-row"><span>Subtotal</span><span>$9.00</span></div><div class="total-row"><span>Total to pay</span><strong>$9.00</strong></div><button type="button" class="pay-button">Complete Sale <span>→</span></button><button type="button" class="clear-button">Clear Order</button><p class="preview-note">Design preview · controls are not active</p></div>
+        </aside>
+    </main>
+    <footer>Fresh Mart POS <span>Simple shopping. Fresh every day.</span></footer>
 </body>
-<script src="script.js"></script>
 </html>
